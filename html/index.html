@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilu Portfolio</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Философ</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="home-nav active"></a>
+            <a href="#education" class="education-nav"></a>
+            <a href="#contact" class="contact-nav"></a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="/assets/images/img1.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1 class="typing-text">Академия <span id="typing-text-span"></span></h1>
+            <p>Добро пожаловать в Академию китайского языка! Мы предлагаем уникальные образовательные программы для всех уровней владения китайским языком — от начинающих до продвинутых. </p>
+            
+            <div class="social-icon">
+                <a href="#"><i class="fa-brands fa-vk"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <a href="#education" class="btn">К программам</a>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading"><span>Образование</span></h2>
+
+        <!-- <div class="directions-container">
+            <div class="directions-box">
+                <div class="directions-info">
+                    <h4>Курсы Китайского языка</h4>
+                    <p>Наши курсы китайского языка предназначены для всех, кто хочет овладеть этим удивительным и востребованным языком. Вы сможете выбрать удобный формат обучения: индивидуальные занятия, групповые курсы или онлайн-уроки.</p>
+                </div>
+            </div>
+            <div class="directions-box">
+                <div class="directions-info">
+                    <h4>Экзамена и сертификация</h4>
+                    <p>В Академии китайского языка мы готовим студентов к международно признанным экзаменам по китайскому языку, таким как HSK (汉语水平考试) и HSKK (HSK Speaking Test).</p>
+                </div>
+            </div>
+            <div class="directions-box">
+                <div class="directions-info">
+                    <h4>Обучение в Китае</h4>
+                    <p>Академия китайского языка предоставляет уникальные возможности для обучения в Китае. Мы сотрудничаем с ведущими китайскими университетами и образовательными учреждениями для погружения в языковую культуру.</p>
+                </div>
+            </div>
+            <div class="directions-box">
+                <div class="directions-info">
+                    <h4>Мероприятия</h4>
+                    <p>В Академии китайского языка мы регулярно организуем разнообразные мероприятия, направленные на углубление знаний и погружение в китайскую культуру. Наши студенты вседа участвуют в увлекательных событиях.</p>
+                </div>
+            </div>
+            </div>
+        </div> -->
+        <div class="timeline">
+            <div class="container left">
+                <div class="content" id="courses">
+                    <div class="tag">
+                        <h2>Курсы китайского языка</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content" id="exams">
+                    <div class="tag">
+                        <h2>Экзамены и сертификация</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content" id="study">
+                    <div class="tag">
+                        <h2>Обучение в Китае</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content" id="activities">
+                    <div class="tag">
+                        <h2>Мероприятия</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading"><span>Обратная связь</span></h2>
+        <form action="">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="email" placeholder="Электронная почта" required>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            <input type="submit" value="Отправить сообщение" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-vk"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Образование</a></li>
+            <li><a href="#">Обратная связь</a></li>
+        </ul>
+        <p class="copyright">
+            All Rights Reserved
+        </p>
+    </footer>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
