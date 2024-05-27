@@ -118,7 +118,7 @@
         font-family: "Font Awesome\ 5 Free";
     }
 }
-@media (max-width: 510px) {
+@media (max-width: 520px) {
     #menu-icon {
         display: block;
     }
@@ -127,7 +127,7 @@
         position: absolute;
         top: 100%;
         right: 0;
-        width: 40%;
+        width: 20%;
         border-left: 3px solid var(--main-color);
         border-bottom: 3px solid var(--main-color);
         border-bottom-left-radius: 2rem;
@@ -156,13 +156,13 @@
     .navbar a {
         display: block;
         font-size: calc(1rem + 1.5vw);
-        margin: 3rem 0;
+        margin: 1.3rem 0;
         font-family: "Font Awesome\ 5 Free";
     }
 
     .navbar a:hover,
     .navbar a.active {
-        padding: 1rem;
+        padding-left: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid var(--main-color);
     }

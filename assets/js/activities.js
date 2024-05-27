@@ -8,9 +8,9 @@ const slider = document.querySelector(".activities-page-items");
 const slides = document.querySelectorAll(".activities-page-item");
 const button = document.querySelectorAll(".activities-page-button");
 
-let current = 0;
-let prev = 2;
-let next = 1;
+let current = 1;
+let prev = 0;
+let next = 2;
 
 for (let i = 0; i < button.length; i++) {
     button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
