@@ -39,33 +39,6 @@
     <section class="education" id="education">
         <h2 class="heading"><span>Образование</span></h2>
 
-        <!-- <div class="directions-container">
-            <div class="directions-box">
-                <div class="directions-info">
-                    <h4>Курсы Китайского языка</h4>
-                    <p>Наши курсы китайского языка предназначены для всех, кто хочет овладеть этим удивительным и востребованным языком. Вы сможете выбрать удобный формат обучения: индивидуальные занятия, групповые курсы или онлайн-уроки.</p>
-                </div>
-            </div>
-            <div class="directions-box">
-                <div class="directions-info">
-                    <h4>Экзамена и сертификация</h4>
-                    <p>В Академии китайского языка мы готовим студентов к международно признанным экзаменам по китайскому языку, таким как HSK (汉语水平考试) и HSKK (HSK Speaking Test).</p>
-                </div>
-            </div>
-            <div class="directions-box">
-                <div class="directions-info">
-                    <h4>Обучение в Китае</h4>
-                    <p>Академия китайского языка предоставляет уникальные возможности для обучения в Китае. Мы сотрудничаем с ведущими китайскими университетами и образовательными учреждениями для погружения в языковую культуру.</p>
-                </div>
-            </div>
-            <div class="directions-box">
-                <div class="directions-info">
-                    <h4>Мероприятия</h4>
-                    <p>В Академии китайского языка мы регулярно организуем разнообразные мероприятия, направленные на углубление знаний и погружение в китайскую культуру. Наши студенты вседа участвуют в увлекательных событиях.</p>
-                </div>
-            </div>
-            </div>
-        </div> -->
         <div class="timeline">
             <div class="container left">
                 <div class="content" id="courses">
@@ -100,13 +73,13 @@
 
     <section class="contact" id="contact">
         <h2 class="heading"><span>Обратная связь</span></h2>
-        <form action="">
+        <form onsubmit="sendMessage(event)">
             <div class="input-box">
                 <input type="text" name="name" placeholder="Имя" required>
-                <input type="email" placeholder="Электронная почта" required>
+                <input type="email" name="email" placeholder="Электронная почта" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-            <input type="submit" value="Отправить сообщение" class="btn">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            <input type="submit" value="Отправить сообщение" class="btn" id="contact-btn">
         </form>
     </section>
 
@@ -124,6 +97,7 @@
             All Rights Reserved
         </p>
     </footer>
+    <script src="/assets/js/telegram.js"></script>
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/redirect.js"></script>
     <script src="/assets/js/navbar.js"></script>

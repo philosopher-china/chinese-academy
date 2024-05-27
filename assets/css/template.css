@@ -137,6 +137,34 @@ html::-webkit-scrollbar-thumb {
     box-shadow: 0 0 25px var(--main-color);
 }
 
+.message-send-success {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--bg-color);
+    border-radius: 4rem;
+    font-size: calc(1rem + .5vw);
+    color: green;
+    border: 2px solid green;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-top: 2rem;
+}
+
+.message-send-error {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--bg-color);
+    border-radius: 4rem;
+    font-size: calc(1rem + .5vw);
+    color: red;
+    border: 2px solid red;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-top: 2rem;
+}
+
 section {
     min-height: 100vh;
     padding: 8rem 9% 5rem;
