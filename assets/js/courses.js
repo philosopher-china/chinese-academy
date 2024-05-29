@@ -1,3 +1,5 @@
+// ========================== Редиректы на странице "Курсы китайского языка" ================================
+
 let home_page = document.querySelector('.home-nav');
 let btn = document.querySelector('.btn');
 

@@ -1,3 +1,5 @@
+/* Секция "Главная" */
+
 .home {
     display: flex;
     justify-content: center;
@@ -168,7 +170,7 @@
     }
 }
 
-/* Раздел "Образование" */
+/* Секция "Образование" */
 
 .education {
     background: var(--second-bg-color);
@@ -310,7 +312,7 @@
     }
 }
 
-/* Раздел "Обратная связь" */
+/* Секция "Обратная связь" */
 
 .contact h2 {
     margin-bottom: 3rem;

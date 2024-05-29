@@ -1,13 +1,12 @@
 // ========================== Динамическое изменение текста ================================
+
 var typeWriterElement = document.getElementById('typing-text-span'); 
 var textArray = ["Философ", "哲学家"];
 
-
-// function to generate the backspace effect 
+// Генерация эффекта удаления текста
 function delWriter(text, i, cb) {
 	if (i >= 0 ) {
 		typeWriterElement.innerHTML = text.substring(0, i--);
-		// generate a random Number to emulate backspace hitting.
  		var rndBack = 10 + Math.random() * 100;
 		setTimeout(function() {
 			delWriter(text, i, cb);
@@ -17,11 +16,10 @@ function delWriter(text, i, cb) {
 	}
 };
 
-// function to generate the keyhitting effect
+// Генерация набора текста
 function typeWriter(text, i, cb) {
 	if ( i < text.length+1 ) {
 		typeWriterElement.innerHTML = text.substring(0, i++);
-		// generate a random Number to emulate Typing on the Keyboard.
 		var rndTyping = 250 - Math.random() * 100;
 		setTimeout( function () { 
 			typeWriter(text, i++, cb)
@@ -33,7 +31,7 @@ function typeWriter(text, i, cb) {
 	}
 };
 
-// the main writer function
+// Главная функция набора текста
 function StartWriter(i) {
 	if (typeof textArray[i] == "undefined") {
 		setTimeout( function () {
@@ -45,7 +43,8 @@ function StartWriter(i) {
 		});
 	}  
 };
-// wait one second then start the typewriter
+
+// Временная дельта по набору текста
 setTimeout( function () {
 	StartWriter(0);
 },1000);

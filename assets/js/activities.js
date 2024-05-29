@@ -1,3 +1,5 @@
+// ========================== Редиректы на странице "Мероприятия" ================================
+
 let home_page = document.querySelector('.home-nav');
 
 home_page.onclick = () => {
@@ -16,10 +18,13 @@ for (let i = 0; i < button.length; i++) {
     button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
 }
 
+// Обработка перелистывания на следующий рисунок
 const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
+// Обработка перелистывания на предыдущий рисунок
 const gotoNext = () => current < 2 ? gotoNum(current + 1) : gotoNum(0);
 
+// Основная функция карусели
 const gotoNum = number => {
     current = number;
     prev = current - 1;

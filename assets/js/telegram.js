@@ -1,3 +1,5 @@
+// ========================== Обработка отправки данных из формы обратной связи ================================
+
 const BOT_TOKEN = '7028652154:AAFuJcekeL_3fgsw8rSB0BPEoH6-3dalR10'
 const CHAT_ID = '@PhilosopherAcademy'
 const API = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`
@@ -16,6 +18,8 @@ async function sendMessage(event) {
     try {
         form_btn.value = "Отправка";
         form_btn.disabled = true;
+
+        // Запрос на отправку данных в Telegram
         const response = await fetch(API, {
             method: 'POST',
             headers: {
